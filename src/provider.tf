@@ -5,6 +5,7 @@ terraform {
       version = "5.94.1"
     }
   }
+}
 
 provider "aws" {
   region = var.region
