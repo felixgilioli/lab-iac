@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configurações
-BUCKET_NAME="fsv-terraform"
+BUCKET_NAME="iac-terraform-felix"
 REGION="us-east-1"
 DYNAMODB_TABLE="terraform-locks"
 
