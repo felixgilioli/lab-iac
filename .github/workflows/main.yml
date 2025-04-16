@@ -33,7 +33,8 @@ jobs:
       - name: Execução do Terraform Plan
         working-directory: ./src
         run: | 
-          terraform plan -input=false -no-color -out=tfplan && terraform show -no-color tfplan > tfplan.json
+          terraform plan -input=false -no-color -out=tfplan 
+          terraform show -json tfplan > tfplan.json
 
       - uses: terraform-linters/setup-tflint@v4
         name: Instalação do TFLint
